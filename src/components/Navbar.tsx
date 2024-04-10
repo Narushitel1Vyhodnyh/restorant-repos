@@ -1,31 +1,36 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
   return (
     <header>
-      <nav className="bg-amber-500">
-      <div className="  container ml-auto mr-auto pl-16px pr-16px">
-        
-        <ul className='items-center pb-10  flex gap-12 text-white pt-10'>
+      <nav className="bg-red-700 pb-3">
+        <div className="container items-center justify-between flex ml-auto mr-auto pl-16px pr-16px">
+              <img className='w-32 mt-1' src="\img\logo.png" alt="" />
+          <ul className='items-center pb-10  flex gap-12 text-white pt-10'>
             <li>
-            <img className='w-32' src="\img\logo.png" alt="" />
             </li>
             <li className=''>
-                <a className='text-xl font-bold' href="Главная">Главная</a>
+              <Link className='text-xl font-bold ' href="Главная">Главная</Link>
             </li>
             <li>
-                <a className='text-xl font-bold' href="О нас">О нас</a>
+              <Link className='text-xl font-bold' href="О нас">О нас</Link>
             </li>
             <li>
-                <a className='text-xl font-bold' href="Меню">Меню</a>
+              <Link className='text-xl font-bold' href="Меню">Меню</Link>
             </li>
             <li>
-                <a className='text-xl font-bold' href="Контакты">Контакты</a>
+              <Link className='text-xl font-bold' href="Контакты">Контакты</Link>
             </li>
-        </ul>
+          </ul>
+          <ul>
+            <li className=''>
+              <button className=' bg-red-900 text-orange-50 w-24 rounded-md'>Заказать доставку</button>
+            </li>
+          </ul>
         </div>
-      </nav>   
+      </nav>
     </header>
   )
 }
