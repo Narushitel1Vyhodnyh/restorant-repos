@@ -7,7 +7,7 @@ const Navbar = () => {
     <header>
       <nav className="bg-red-700 pb-3">
         <div className="container items-center justify-between flex ml-auto mr-auto pl-16px pr-16px">
-              <img className='w-32 mt-1' src="\img\logo.png" alt="" />
+              <img className='w-24 mt-1' src="\img\logo.png" alt="" />
           <ul className='items-center pb-10  flex gap-12 text-white pt-10'>
             <li>
             </li>
@@ -26,7 +26,7 @@ const Navbar = () => {
           </ul>
           <ul>
             <li className=''>
-              <button className=' bg-red-900 text-orange-50 w-24 rounded-md'>Заказать доставку</button>
+              <button className=' bg-red-900 text-orange-50 p-1.5 rounded-md'>Заказать доставку</button>
             </li>
           </ul>
         </div>
